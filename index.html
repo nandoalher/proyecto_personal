@@ -6,26 +6,62 @@
     <title>Dashboard Escolar</title>
     <link rel="stylesheet" href="/src/output.css">
 </head>
-<body class="flex flex-col min-h-screen">
-    <header>
-        <nav class="bg-regal-blackstrg text-lg m-5 p-0.5 rounded-2xl">
-            <ul class="flex flex-row justify-evenly m-2">
-                <li class="bg-regal-green text-black font-display text-lg rounded-full px-4 py-1">Registrar tareas</li>
-                <li class="text-white font-display text-lg rounded-full px-4 py-1">Asistencia</li>
-                <li class="text-white font-display text-lg rounded-full px-4 py-1">Tareas pasadas</li>
-                <li class="text-white font-display text-lg rounded-full px-4 py-1">Reporte individual</li>
-                <li class="text-white font-display text-lg rounded-full px-4 py-1">Generar observacion</li>
-                <li class="text-white font-display text-lg rounded-full px-4 py-1">Promedios</li>
-                <li class="text-white font-display text-lg rounded-full px-4 py-1">Gestionar alumnos</li>
+<body class="flex flex-row min-h-screen bg-gray-100">
+    <header class="m-5">
+        <nav class="bg-regal-blackstrg text-lg p-0.5 rounded-2xl h-full">
+            <ul class="flex flex-col justify-evenly m-2 gap-5">
+                <li class="flex items-center gap-2 bg-regal-green text-black font-display text-lg rounded-2xl px-4 py-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m16.862 4.487 1.687-1.688a1.875 1.875 0 1 1 2.652 2.652L10.582 16.07a4.5 4.5 0 0 1-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 0 1 1.13-1.897l8.932-8.931Zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0 1 15.75 21H5.25A2.25 2.25 0 0 1 3 18.75V8.25A2.25 2.25 0 0 1 5.25 6H10" />
+                    </svg>
+                    Registrar tareas
+                </li>
+                <li class="flex items-center gap-2 text-white font-display text-lg px-4 py-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.35 3.836c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m8.9-4.414c.376.023.75.05 1.124.08 1.131.094 1.976 1.057 1.976 2.192V16.5A2.25 2.25 0 0 1 18 18.75h-2.25m-7.5-10.5H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V18.75m-7.5-10.5h6.375c.621 0 1.125.504 1.125 1.125v9.375m-8.25-3 1.5 1.5 3-3.75" />
+                    </svg>
+                    Asistencia
+                </li>
+                <li class="flex items-center gap-2 text-white font-display text-lg px-4 py-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                    </svg>
+                    Tareas pasadas
+                </li>
+                <li class="flex items-center gap-2 text-white font-display text-lg px-4 py-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25ZM6.75 12h.008v.008H6.75V12Zm0 3h.008v.008H6.75V15Zm0 3h.008v.008H6.75V18Z" />
+                    </svg>
+                    Reporte individual
+                </li>
+                <li class="flex items-center gap-2 text-white font-display text-lg px-4 py-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                    </svg>
+                    Generar observacion
+                </li>
+                <li class="flex items-center gap-2 text-white font-display text-lg px-4 py-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 15.75V18m-7.5-6.75h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V13.5Zm0 2.25h.008v.008H8.25v-.008Zm0 2.25h.008v.008H8.25V18Zm2.498-6.75h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V13.5Zm0 2.25h.007v.008h-.007v-.008Zm0 2.25h.007v.008h-.007V18Zm2.504-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5Zm0 2.25h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V18Zm2.498-6.75h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V13.5ZM8.25 6h7.5v2.25h-7.5V6ZM12 2.25c-1.892 0-3.758.11-5.593.322C5.307 2.7 4.5 3.65 4.5 4.757V19.5a2.25 2.25 0 0 0 2.25 2.25h10.5a2.25 2.25 0 0 0 2.25-2.25V4.757c0-1.108-.806-2.057-1.907-2.185A48.507 48.507 0 0 0 12 2.25Z" />
+                    </svg>
+                    Promedios
+                </li>
+                <li class="flex items-center gap-2 text-white font-display text-lg px-4 py-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 7.5v3m0 0v3m0-3h3m-3 0h-3m-2.25-4.125a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0ZM3 19.235v-.11a6.375 6.375 0 0 1 12.75 0v.109A12.318 12.318 0 0 1 9.374 21c-2.331 0-4.512-.645-6.374-1.766Z" />
+                    </svg>
+                    Gestionar alumnos
+                </li>
             </ul>
         </nav>
     </header>
-    <main class="flex flex-1 gap-10 bg-gray-100 mx-5 my-1 rounded-2xl">
-        <section class="flex-1 text-center font-display text-2xl mt-3 ml-3 rounded-2xl bg-white">
+    <main class="flex flex-1 gap-5 m-5 ml-0">
+        <section class="flex-1 text-center font-display text-2xl rounded-2xl bg-gray-100">
             <div>Registrar Tarea</div>
             <div>Hola</div>
         </section>
-        <section class="flex-1 text-center font-display text-2xl mt-3 mr-3 rounded-2xl bg-white">
+        <section class="flex-1 text-center font-display text-2xl rounded-2xl bg-gray-100">
             <div>Asignar alumnos</div>
             <div>Hola</div>
         </section>
