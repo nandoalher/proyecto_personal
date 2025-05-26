@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@theme {
+    --color-regal-green: #d9f275; 
+    --color-regal-blackstrg: #1f1e31;
+}
+
 @font-face {
     font-family: 'Roboto' ;
     src: url(./RobotoCondensed-VariableFont_wght.woff2) format('woff2');
@@ -8,6 +13,3 @@
     font-display: swap;
 }
 
-@theme {
-    --font-display: 'Roboto', serif;
-}
