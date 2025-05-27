@@ -2,7 +2,9 @@
 
 @theme {
     --color-regal-green: #d9f275; 
-    --color-regal-blackstrg: #1f1e31;
+    --color-regal-purple: #6841F3;
+    --color-regal-nav: #FFFFFF;
+    --color-regal-body: #F2FAFF;
 }
 
 @font-face {
