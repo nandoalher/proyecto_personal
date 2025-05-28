@@ -5,11 +5,22 @@
     --color-regal-purple: #6841F3;
     --color-regal-nav: #FFFFFF;
     --color-regal-body: #F2FAFF;
+
+    --font-roboto: 'Roboto', sans-serif;
+    --font-oswald: 'Oswald', sans-serif;
 }
 
 @font-face {
     font-family: 'Roboto' ;
     src: url(./RobotoCondensed-VariableFont_wght.woff2) format('woff2');
+    font-style: normal;
+    font-weight: 100 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oswald' ;
+    src: url(./Oswald-VariableFont_wght.woff2) format('woff2');
     font-style: normal;
     font-weight: 100 700;
     font-display: swap;
