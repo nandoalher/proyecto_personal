@@ -7,26 +7,36 @@
     <link rel="stylesheet" href="/src/output.css">
 </head>
 <body>
-    <section class="flex flex-row">
-        <aside>
-            <form>
-                <div class="flex flex-col gap-2">
-                    <label for="nombre" >Nombre de la tarea:</label>
-                    <input type="text" id="nombre" name="nombre" class="border p-2 rounded">
-
-                    <label for="descripcion">Descripción:</label>
-                    <textarea id="descripcion" name="descripcion" class="border p-2 rounded"></textarea>
-
-                    <label for="fecha">Fecha de entrega:</label>
-                    <input type="date" id="fecha" name="fecha" class="border p-2 rounded">
-
-                    <button type="submit" class="bg-blue-500 text-white p-2 rounded">Registrar Tarea</button>
-                </div>
+    <main class="flex flex-row">
+        <section class="flex flex-col p-7">
+            <h1 class="p-4 font-oswald text-4xl">
+                Actividades
+            </h1>
+            <form class="h-full p-4">
+                <fieldset>
+                    <legend class="sr-only">Información de la tarea</legend>
+                    <div class="flex flex-col gap-2">
+                            <input type="text" placeholder="Nombre actividad" id="nombre" name="nombre" class="border p-2 rounded bg-select-green placeholder-labels-green font-bold font-roboto">
+                            <select id="categoria" name="categoria" class="w-full border border-gray-300 rounded-md px-3 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                <option value="" disabled selected hidden>Campo Formativo</option>
+                                <option value="Lenguajes">Lenguajes</option>
+                                <option value="Saberes y Pensamiento Científico">Saberes y Pensamiento Científico</option>
+                                <option value="Ética, Naturaleza y Sociedades">Ética, Naturaleza y Sociedades</option>
+                                <option value="De lo Humano a lo Comunitario">De lo Humano a lo Comunitario</option>
+                            </select>
+                            <input type="date" placeholder="Hola" id="fecha" name="fecha" class="border p-2 rounded">
+                            <button type="submit" placeholder="Hola" class="bg-blue-500 text-white p-2 rounded">Registrar Tarea</button>
+                        </div>
+                </fieldset>
             </form>
-        </aside>
-        <article>
-            Aún no hay nada
-        </article>
-    </section>
+            <img src="" alt="">
+        </section>
+
+        <section>
+            <div>
+                Hola
+            </div>
+        </section>
+    </main>
 </body>
 </html>
