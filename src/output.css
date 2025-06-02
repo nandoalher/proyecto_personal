@@ -7,21 +7,24 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-amber-400: oklch(82.8% 0.189 84.429);
-    --color-amber-600: oklch(66.6% 0.179 58.318);
-    --color-amber-700: oklch(55.5% 0.163 48.998);
-    --color-amber-900: oklch(41.4% 0.112 45.904);
+    --color-amber-200: oklch(92.4% 0.12 95.746);
+    --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
     --text-sm: 0.875rem;
     --text-sm--line-height: calc(1.25 / 0.875);
+    --text-base: 1rem;
+    --text-base--line-height: calc(1.5 / 1);
     --text-lg: 1.125rem;
     --text-lg--line-height: calc(1.75 / 1.125);
     --text-2xl: 1.5rem;
     --text-2xl--line-height: calc(2 / 1.5);
+    --text-3xl: 1.875rem;
+    --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
+    --font-weight-light: 300;
     --font-weight-bold: 700;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
@@ -36,6 +39,7 @@
     --color-button-green: #C3EF6F;
     --font-roboto: 'Roboto', sans-serif;
     --font-oswald: 'Oswald', sans-serif;
+    --font-urbanist: 'Urbanist', sans-serif;
   }
 }
 @layer base {
@@ -216,8 +220,47 @@
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
+  .mt-4 {
+    margin-top: calc(var(--spacing) * 4);
+  }
+  .mt-8 {
+    margin-top: calc(var(--spacing) * 8);
+  }
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
+  }
+  .mt-20 {
+    margin-top: calc(var(--spacing) * 20);
+  }
+  .mt-22 {
+    margin-top: calc(var(--spacing) * 22);
+  }
+  .mt-24 {
+    margin-top: calc(var(--spacing) * 24);
+  }
+  .mt-28 {
+    margin-top: calc(var(--spacing) * 28);
+  }
+  .mt-32 {
+    margin-top: calc(var(--spacing) * 32);
+  }
   .ml-3 {
     margin-left: calc(var(--spacing) * 3);
+  }
+  .ml-4 {
+    margin-left: calc(var(--spacing) * 4);
+  }
+  .ml-14 {
+    margin-left: calc(var(--spacing) * 14);
+  }
+  .ml-20 {
+    margin-left: calc(var(--spacing) * 20);
+  }
+  .ml-32 {
+    margin-left: calc(var(--spacing) * 32);
+  }
+  .block {
+    display: block;
   }
   .flex {
     display: flex;
@@ -232,6 +275,9 @@
     width: calc(var(--spacing) * 6);
     height: calc(var(--spacing) * 6);
   }
+  .h-150 {
+    height: calc(var(--spacing) * 150);
+  }
   .h-full {
     height: 100%;
   }
@@ -241,23 +287,17 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-4 {
-    width: calc(var(--spacing) * 4);
-  }
   .w-10 {
     width: calc(var(--spacing) * 10);
-  }
-  .w-20 {
-    width: calc(var(--spacing) * 20);
-  }
-  .w-40 {
-    width: calc(var(--spacing) * 40);
   }
   .w-full {
     width: 100%;
   }
   .w-screen {
     width: 100vw;
+  }
+  .min-w-80 {
+    min-width: calc(var(--spacing) * 80);
   }
   .flex-grow {
     flex-grow: 1;
@@ -329,28 +369,9 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-2 {
-    border-style: var(--tw-border-style);
-    border-width: 2px;
-  }
-  .border-4 {
-    border-style: var(--tw-border-style);
-    border-width: 4px;
-  }
-  .border-r {
-    border-right-style: var(--tw-border-style);
-    border-right-width: 1px;
-  }
-  .border-r-2 {
-    border-right-style: var(--tw-border-style);
-    border-right-width: 2px;
-  }
   .border-b {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
-  }
-  .border-amber-900 {
-    border-color: var(--color-amber-900);
   }
   .border-labels-green {
     border-color: var(--color-labels-green);
@@ -358,23 +379,14 @@
   .border-select-green {
     border-color: var(--color-select-green);
   }
-  .border-r-amber-600 {
-    border-right-color: var(--color-amber-600);
-  }
-  .border-r-amber-700 {
-    border-right-color: var(--color-amber-700);
-  }
-  .border-r-labels-green {
-    border-right-color: var(--color-labels-green);
-  }
-  .border-b-labels-green {
-    border-bottom-color: var(--color-labels-green);
-  }
-  .bg-amber-400 {
-    background-color: var(--color-amber-400);
+  .bg-amber-200 {
+    background-color: var(--color-amber-200);
   }
   .bg-button-green {
     background-color: var(--color-button-green);
+  }
+  .bg-gray-100 {
+    background-color: var(--color-gray-100);
   }
   .bg-regal-body {
     background-color: var(--color-regal-body);
@@ -387,6 +399,9 @@
   }
   .bg-white {
     background-color: var(--color-white);
+  }
+  .object-contain {
+    object-fit: contain;
   }
   .p-0 {
     padding: calc(var(--spacing) * 0);
@@ -424,9 +439,6 @@
   .pl-6 {
     padding-left: calc(var(--spacing) * 6);
   }
-  .text-center {
-    text-align: center;
-  }
   .text-left {
     text-align: left;
   }
@@ -436,13 +448,24 @@
   .font-roboto {
     font-family: var(--font-roboto);
   }
+  .font-urbanist {
+    font-family: var(--font-urbanist);
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
+  .text-3xl {
+    font-size: var(--text-3xl);
+    line-height: var(--tw-leading, var(--text-3xl--line-height));
+  }
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-base {
+    font-size: var(--text-base);
+    line-height: var(--tw-leading, var(--text-base--line-height));
   }
   .text-lg {
     font-size: var(--text-lg);
@@ -455,6 +478,10 @@
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
+  }
+  .font-light {
+    --tw-font-weight: var(--font-weight-light);
+    font-weight: var(--font-weight-light);
   }
   .text-black {
     color: var(--color-black);
@@ -520,6 +547,13 @@
 @font-face {
   font-family: 'Oswald';
   src: url(./Oswald-VariableFont_wght.woff2) format('woff2');
+  font-style: normal;
+  font-weight: 100 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Urbanist';
+  src: url(./Urbanist-VariableFont_wght.woff2) format('woff2');
   font-style: normal;
   font-weight: 100 700;
   font-display: swap;
