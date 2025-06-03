@@ -8,23 +8,48 @@
 </head>
 <body>
     <main class="flex flex-row">
-        <nav class="bg-gray-100 min-w-80 h-screen">
+        <nav class="bg-gray-100 min-w-64 h-screen">
             <div class="flex flex-row">
                 <img class="w-10 object-contain ml-14 mt-8" src="./src/logo.png" alt="Imagen de libros">
                 <h1 class="font-oswald text-2xl ml-4 mt-8">ALHER</h1>
             </div>
             <ul class="h-150 mt-10">
-                <li class="font-roboto font-light text-lg ml-14 mt-4">Datos del alumno</li>
-                <li class="font-roboto font-light text-lg ml-14 mt-4">Datos del tutor</li>
-                <li class="font-roboto font-light text-lg ml-14 mt-4">No se</li>
-                <li class="font-roboto font-light text-lg ml-14 mt-4">No se</li>
+                <li class="flex gap-2 font-roboto font-light text-lg ml-14 mt-8 cursor-pointer hover:font-bold">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-users-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M5 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M3 21v-2a4 4 0 0 1 4 -4h4c.96 0 1.84 .338 2.53 .901" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /><path d="M16 19h6" /><path d="M19 16v6" /></svg>
+                    Agregar alumno
+                </li>
+                <li class="flex gap-2 font-roboto font-light text-lg ml-14 mt-8 cursor-pointer hover:font-bold">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-user-edit"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" /><path d="M6 21v-2a4 4 0 0 1 4 -4h3.5" /><path d="M18.42 15.61a2.1 2.1 0 0 1 2.97 2.97l-3.39 3.42h-3v-3l3.42 -3.39z" /></svg>
+                    Editar alumno
+                </li>
+                <li class="flex gap-2 font-roboto font-light text-lg ml-14 mt-8 cursor-pointer hover:font-bold">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mood-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M20.983 12.556a9 9 0 1 0 -8.433 8.427" /><path d="M9 10h.01" /><path d="M15 10h.01" /><path d="M9.5 15c.658 .64 1.56 1 2.5 1c.194 0 .386 -.015 .574 -.045" /><path d="M21.5 21.5l-5 -5" /><path d="M16.5 21.5l5 -5" /></svg>
+                    Eliminar alumno
+                </li>
+                <li class="flex gap-2 font-roboto font-light text-lg ml-14 mt-8 cursor-pointer hover:font-bold">
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-layers-intersect"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M8 4m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" /><path d="M4 8m0 2a2 2 0 0 1 2 -2h8a2 2 0 0 1 2 2v8a2 2 0 0 1 -2 2h-8a2 2 0 0 1 -2 -2z" /></svg>
+                    Ver datos
+                </li>
             </ul>
         </nav>
-        <section class="bg-amber-200 w-screen">
+        <section class="w-screen">
             <h2 class="font-bold font-urbanist text-3xl ml-32 mt-22">Datos generales del alumno</h2>
             <span class="block font-light font-urbanist text-base ml-32 mt-2">Ingresa la información del alumno</span>
-            <form action="">
-                
+            <form action="" class="ml-32 mr-52 mt-6">
+                <fieldset class="border-2 border-black/40 rounded-lg flex flex-col">
+                    <legend class="ml-8">Alumno</legend>
+                    <div class="grid grid-cols-3 gap-2 gap-x-8 p-4">
+                        <input type="text" placeholder="Nombre del alumno" id="nombre" name="nombre" class="rounded-sm p-2 bg-gray-100 font-urbanist outline-blue-400">
+                        <input type="text" placeholder="Apellido materno" id="apellidomaterno" name="apellidomaterno" class="rounded-sm p-2 bg-gray-100 font-urbanist outline-blue-400">
+                        <input type="text" placeholder="Apellido paterno" id="apellidopaterno" name="apellidopaterno" class="rounded-sm p-2 bg-gray-100 font-urbanist outline-blue-400">
+                        <select name="sexo" id="sexo" class="rounded-sm p-2 bg-gray-100 font-urbanist">
+                            <option value="sexo" disabled selected hidden>Sexo</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>
+                        </select>
+                        <input type="text" placeholder="CURP" id="curp" name="curp" class="rounded-sm p-2 bg-gray-100 font-urbanist outline-blue-400">
+                    </div>
+                </fieldset>
             </form>
         </section>
     </main>
