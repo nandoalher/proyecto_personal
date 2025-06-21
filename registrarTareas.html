@@ -16,68 +16,48 @@
                 <fieldset>
                     <legend class="sr-only">Información de la tarea</legend>
                     <div class="flex flex-col gap-10">
-                            <input type="text" placeholder="Nombre actividad" id="nombre" name="nombre" class="border border-select-green p-2 rounded-xl bg-select-green placeholder-labels-green font-bold font-roboto focus:border-2 focus:ring-labels-green focus:border-labels-green">
-                            <select id="categoria" name="categoria" class="w-full border border-select-green rounded-xl px-3 py-2 bg-select-green text-labels-green font-bold font-roboto focus:outline-none focus:ring-2 focus:ring-labels-green focus:border-labels-green">
+                            <input type="text" placeholder="Nombre actividad" id="nombre" name="nombre" class="p-2 rounded-xl bg-gray-100 placeholder-labels-green font-bold font-urbanist text-black">
+                            <select id="categoria" name="categoria" class="w-full rounded-xl px-3 py-2 bg-gray-100 text-labels-green font-bold font-urbanist focus:outline-none">
                                 <option value="" disabled selected hidden>Campo Formativo</option>
                                 <option value="Lenguajes">Lenguajes</option>
                                 <option value="Saberes y Pensamiento Científico">Saberes y Pensamiento Científico</option>
                                 <option value="Ética, Naturaleza y Sociedades">Ética, Naturaleza y Sociedades</option>
                                 <option value="De lo Humano a lo Comunitario">De lo Humano a lo Comunitario</option>
                             </select>
-                            <input type="date" placeholder="Hola" id="fecha" name="fecha" class="border-xl p-2 rounded">
-                            <button type="submit" class="bg-button-green text-black font-bold font-oswald p-2 rounded-3xl">Registrar Tarea</button>
+                            <input type="date" placeholder="Hola" id="fecha" name="fecha" class="border-xl p-2 rounded font-urbanist">
+                            <button type="submit" class="bg-black text-white font-bold font-urbanist p-2 rounded-3xl cursor-pointer hover:bg-button-green hover:text-black">Registrar Tarea</button>
                         </div>
                 </fieldset>
             </form>
         </section>
 
-        <section class="h-full w-screen p-12">
-            <table class="h-full w-full border border-labels-green">
-                <tdead>
-                    <tr class="border-b border-labels-green">
-                        <th class="text-left p-2 pl-6">Numero de lista</th>
-                        <th class="text-left">Nombre del alumno</th>
-                        <th class="text-left">Acción</th>
-                    </tr>
-                </tdead>
-                <tbody>
-                    <tr class="border-b border-labels-green">
-                        <td class="p-6">1</td>
-                        <td>Luis Fernando Alvarez Hernandez</td>
-                        <td>
-                            <button class="w-full text-left">Asignar</button>
-                        </td>
-                    </tr>
-                    <tr class="border-b border-labels-green">
-                        <td class="p-6">2</td>
-                        <td>Luis Fernando Alvarez Hernandez</td>
-                        <td>
-                            <button class="w-full text-left">Asignar</button>
-                        </td>
-                    </tr>
-                    <tr class="border-b border-labels-green">
-                        <td class="p-6">3</td>
-                        <td>Luis Fernando Alvarez Hernandez</td>
-                        <td>
-                            <button class="w-full text-left">Asignar</button>
-                        </td>
-                    </tr>
-                    <tr class="border-b border-labels-green">
-                        <td class="p-6">4</td>
-                        <td>Luis Fernando Alvarez Hernandez</td>
-                        <td>
-                            <button class="w-full text-left">Asignar</button>
-                        </td>
-                    </tr>
-                    <tr class="border-b border-labels-green">
-                        <td class="p-6">5</td>
-                        <td>Luis Fernando Alvarez Hernandez</td>
-                        <td>
-                            <button class="w-full text-left">Asignar</button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+        <section class="h-full w-screen p-12 border-gray-300 border-[1px] rounded-2xl mt-11 mr-8 grid grid-cols-4 gap-4 text-center justify-center">
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">1</div>
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">2</div>
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">3</div>
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">4</div>
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">5</div>
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">6</div>
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">7</div>
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">8</div>
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">9</div>
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">10</div>
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">11</div>
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">12</div>
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">13</div>
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">14</div>
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">15</div>
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">16</div>
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">17</div>
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">18</div>
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">19</div>
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">20</div>
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">21</div>
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">22</div>
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">23</div>
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">24</div>
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">25</div>
+            <div class="bg-gray-200 size-20  rounded-2xl flex justify-center items-center text-2xl font-urbanist m-auto cursor-pointer hover:bg-black hover:text-white">26</div>
         </section>
     </main>
 </body>
